@@ -4,7 +4,10 @@ resource "aws_subnet" "main" {
   map_public_ip_on_launch = true
   availability_zone       = "${var.config[var.env].region}a"
 
-  tags = {
-    Name = "subnet-${var.env}"
-  }
+  tags = merge(
+    local.tags_comuns,
+    {
+      Name = "subnet-${var.env}"
+    }
+  )
 }

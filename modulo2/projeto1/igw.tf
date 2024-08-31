@@ -1,9 +1,12 @@
 resource "aws_internet_gateway" "main" {
   vpc_id = aws_vpc.main.id
 
-  tags = {
-    Name = "internet-gateway-${var.env}"
-  }
+  tags = merge(
+    local.tags_comuns,
+    {
+      Name = "internet-gateway-${var.env}"
+    }
+  )
 }
 
 resource "aws_route_table" "main" {
@@ -14,9 +17,12 @@ resource "aws_route_table" "main" {
     gateway_id = aws_internet_gateway.main.id
   }
 
-  tags = {
-    Name = "route-table-${var.env}"
-  }
+  tags = merge(
+    local.tags_comuns,
+    {
+      Name = "route-table-${var.env}"
+    }
+  )
 }
 
 resource "aws_route_table_association" "main" {

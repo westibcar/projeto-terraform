@@ -6,9 +6,12 @@ resource "aws_instance" "main" {
 
   vpc_security_group_ids = [aws_security_group.main.id]
 
-  tags = {
-    Name = "ec2-${var.env}"
-  }
+  tags = merge(
+    local.tags_comuns,
+    {
+      Name = "ec2-${var.env}"
+    }
+  )
 
   user_data = <<-EOF
             #!/bin/bash
