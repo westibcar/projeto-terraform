@@ -3,10 +3,9 @@ resource "aws_internet_gateway" "main" {
 
   tags = merge(
     local.tags_comuns,
-    {
-      Name = "internet-gateway-${var.env}"
-    }
-  )
+  {
+    Name = "internet-gateway-${var.env}"
+  })
 }
 
 resource "aws_route_table" "main" {
@@ -17,13 +16,14 @@ resource "aws_route_table" "main" {
     gateway_id = aws_internet_gateway.main.id
   }
 
+
   tags = merge(
     local.tags_comuns,
-    {
-      Name = "route-table-${var.env}"
-    }
-  )
+  {
+    Name = "route-table-${var.env}"
+  })
 }
+
 
 resource "aws_route_table_association" "main" {
   subnet_id      = aws_subnet.main.id

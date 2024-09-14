@@ -8,10 +8,10 @@ resource "aws_instance" "main" {
 
   tags = merge(
     local.tags_comuns,
-    {
-      Name = "ec2-${var.env}"
-    }
-  )
+  {
+    Name = "ec2-${var.env}"
+  })
+  
 
   user_data = <<-EOF
             #!/bin/bash
