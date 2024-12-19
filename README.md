@@ -1,6 +1,4 @@
-# curso-terraform
-
-# Terraform Mastery: Infraestrutura como Código - Uday Academy
+# Curso Terraform Mastery: Infraestrutura como Código - Uday Academy
 
 Bem-vindo ao repositório oficial do curso "Terraform Mastery: Infraestrutura como Código" da Uday Academy! Este curso foi cuidadosamente desenvolvido para capacitar você a dominar o Terraform e implementar infraestrutura como código de forma eficiente e escalável.
 
@@ -40,10 +38,7 @@ Contribuições são bem-vindas! Se você encontrou um bug, tem uma sugestão ou
 
 Para dúvidas ou mais informações, entre em contato com a equipe da Uday Academy:
 
-- **E-mail**: contato@uday.com.br
-- **Site**: [uday.com.br]((https://cursos.uday.com.br/id/terraform-mastery-infraestrutura-como-codigo/))
-- **Forum**: [docs.uday.com.br/forums/](https://docs.uday.com.br/forums/)
-
----
-
-Este texto pode ser adaptado conforme necessário para melhor atender às suas necessidades específicas.
+- **E-mail**: cursos@uday.com.br
+- **Link do curso**: [cursos.uday.com.br]((https://cursos.uday.com.br/id/terraform-mastery-infraestrutura-como-codigo/))
+- **Link da comunidade**: [tribo.uday.com.br](https://tribo.uday.com.br/grupos/terraform-334487365/)
+- - **Link de suporte**: [suporte.uday.com.br](https://tribo.uday.com.br/docs/suporte/)
