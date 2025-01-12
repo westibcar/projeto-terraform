@@ -3,6 +3,6 @@ terraform {
     bucket  = "bucket-tfstate-uday-dev"
     key     = "dev/2_utlizando_modulo/terraform.tfstate"
     region  = "us-east-1"
-    profile = "udayaccount"
+    profile = "account_terraform"
   }
 }

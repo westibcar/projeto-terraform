@@ -3,7 +3,7 @@ variable "region" {
 }
 
 variable "account" {
-  default = "udayaccount"
+  default = "account_terraform"
 }
 
 variable "env" {
